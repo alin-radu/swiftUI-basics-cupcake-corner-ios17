@@ -11,6 +11,13 @@
 		1897BB1F2B735B6B00566C38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897BB1E2B735B6B00566C38 /* ContentView.swift */; };
 		1897BB212B735B6C00566C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1897BB202B735B6C00566C38 /* Assets.xcassets */; };
 		1897BB242B735B6C00566C38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1897BB232B735B6C00566C38 /* Preview Assets.xcassets */; };
+		1897BB2B2B73783000566C38 /* NetworkRequestsBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897BB2A2B73783000566C38 /* NetworkRequestsBasics.swift */; };
+		1897BB2D2B73789800566C38 /* AsyncImageBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897BB2C2B73789800566C38 /* AsyncImageBasics.swift */; };
+		1897BB2F2B737B1500566C38 /* FormBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897BB2E2B737B1500566C38 /* FormBasics.swift */; };
+		1897BB312B737E3600566C38 /* HapticEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897BB302B737E3600566C38 /* HapticEffects.swift */; };
+		18B4221B2B739B4E0002D9CE /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4221A2B739B4E0002D9CE /* Order.swift */; };
+		18B4221D2B73A1030002D9CE /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4221C2B73A1030002D9CE /* AddressView.swift */; };
+		18B4221F2B73A73A0002D9CE /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4221E2B73A73A0002D9CE /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		1897BB1E2B735B6B00566C38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1897BB202B735B6C00566C38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1897BB232B735B6C00566C38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1897BB2A2B73783000566C38 /* NetworkRequestsBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestsBasics.swift; sourceTree = "<group>"; };
+		1897BB2C2B73789800566C38 /* AsyncImageBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageBasics.swift; sourceTree = "<group>"; };
+		1897BB2E2B737B1500566C38 /* FormBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormBasics.swift; sourceTree = "<group>"; };
+		1897BB302B737E3600566C38 /* HapticEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticEffects.swift; sourceTree = "<group>"; };
+		18B4221A2B739B4E0002D9CE /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		18B4221C2B73A1030002D9CE /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		18B4221E2B73A73A0002D9CE /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,13 @@
 			children = (
 				1897BB1C2B735B6B00566C38 /* CupcakeCorner_ios17App.swift */,
 				1897BB1E2B735B6B00566C38 /* ContentView.swift */,
+				18B4221C2B73A1030002D9CE /* AddressView.swift */,
+				18B4221E2B73A73A0002D9CE /* CheckoutView.swift */,
+				18B4221A2B739B4E0002D9CE /* Order.swift */,
+				1897BB2A2B73783000566C38 /* NetworkRequestsBasics.swift */,
+				1897BB2C2B73789800566C38 /* AsyncImageBasics.swift */,
+				1897BB2E2B737B1500566C38 /* FormBasics.swift */,
+				1897BB302B737E3600566C38 /* HapticEffects.swift */,
 				1897BB202B735B6C00566C38 /* Assets.xcassets */,
 				1897BB222B735B6C00566C38 /* Preview Content */,
 			);
@@ -138,7 +159,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1897BB1F2B735B6B00566C38 /* ContentView.swift in Sources */,
+				1897BB312B737E3600566C38 /* HapticEffects.swift in Sources */,
 				1897BB1D2B735B6B00566C38 /* CupcakeCorner_ios17App.swift in Sources */,
+				1897BB2F2B737B1500566C38 /* FormBasics.swift in Sources */,
+				1897BB2B2B73783000566C38 /* NetworkRequestsBasics.swift in Sources */,
+				18B4221D2B73A1030002D9CE /* AddressView.swift in Sources */,
+				1897BB2D2B73789800566C38 /* AsyncImageBasics.swift in Sources */,
+				18B4221B2B739B4E0002D9CE /* Order.swift in Sources */,
+				18B4221F2B73A73A0002D9CE /* CheckoutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
