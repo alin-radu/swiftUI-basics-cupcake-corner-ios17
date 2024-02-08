@@ -7,6 +7,19 @@
 
 import SwiftUI
 
+extension HTTPURLResponse {
+    func printDetails() {
+        print("----------------------")
+        print("HTTP Response Details:")
+        print("URL: \(url?.absoluteString ?? "N/A")")
+        print("Status Code: \(statusCode)")
+        print("Headers:")
+        allHeaderFields.forEach { key, value in
+            print("\t\(key): \(value)")
+        }
+    }
+}
+
 struct CheckoutView: View {
     var order: Order
 
@@ -55,20 +68,27 @@ struct CheckoutView: View {
 
         // tell Swift how to send that data over a network call
         let url = URL(string: "https://reqres.in/api/cupcakes")!
+
         var request = URLRequest(url: url)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
 
         do {
-            let (data, _) = try await URLSession.shared.upload(for: request, from: encoded)
+            let (data, response) = try await URLSession.shared.upload(for: request, from: encoded)
 
-            print("test")
             // handle the result
             // convert the data to a string
             if let data = String(data: data, encoding: .utf8) {
                 print("Response as string: \(data)")
             } else {
                 print("Failed to convert response data to string")
+            }
+
+            // convert response to string
+            if let httpResponse = response as? HTTPURLResponse {
+                httpResponse.printDetails()
+            } else {
+                print("Failed to convert response to string")
             }
 
             let decodedOrder = try JSONDecoder().decode(Order.self, from: data)
@@ -91,3 +111,5 @@ struct CheckoutView: View {
 // } catch {
 //     print("Checkout failed: \(error.localizedDescription)")
 // }
+
+
